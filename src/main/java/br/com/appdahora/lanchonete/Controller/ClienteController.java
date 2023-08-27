@@ -12,13 +12,18 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/clientes")
+
 public class ClienteController {
+
     @Autowired
     private ClienteRepository clienteRepository;
     @GetMapping
-    public List<Cliente> listar(){
+
+    public List<Cliente> listar()
+    {
         return clienteRepository.listar();
     }
+
     @GetMapping("/{clienteId}")
     public Cliente buscar(@PathVariable Long clienteId){
         return clienteRepository.buscar(clienteId);
