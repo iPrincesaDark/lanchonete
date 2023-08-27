@@ -4,3 +4,6 @@ insert into cliente (cpf,nome,telefone,email) values ('33333','Lulu','99999','lu
 
 insert into estado (nome,sigla) values  ('Minas gerais','MG');
 insert into estado (nome,sigla) values  ('Goias','GO');
+
+insert into cidade (nome,estado_id) values ('Paracatu',1);
+insert into cidade (nome,estado_id) values ('Cristalina',2);

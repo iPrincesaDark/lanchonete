@@ -52,6 +52,20 @@ public class EstadoController {
         public EntidadeNaoEncontradaException(String mensagem){
             super(mensagem);
         }
+
+
     }
+
+    public static class EntidadeOcupada
+            extends RuntimeException {
+        private static final long serialVersionUID = 1L;
+        public EntidadeOcupada(String mensagem){
+            super(mensagem);
+        }
+
+
+    }
+
+
 }
 
