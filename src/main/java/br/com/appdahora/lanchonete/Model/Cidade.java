@@ -10,7 +10,7 @@ public class Cidade{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nome;
-
+       //teste
     @ManyToOne
     @JoinColumn(nullable = false)
     private Estado estado;
